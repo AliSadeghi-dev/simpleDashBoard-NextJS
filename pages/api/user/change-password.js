@@ -6,7 +6,7 @@ import { connectToDatabase } from "../../../lib/db";
 async function handler(req, res) {
   if (req.method !== "PATCH") {
     res.status(405).json({
-      message: "Invalid method. Send a PATCH request.",
+      message: "Invalid method. Send a PATCH request",
     });
     return;
   }
